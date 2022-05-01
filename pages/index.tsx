@@ -3,7 +3,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
 import Content from '../components/Content'
-import Loader from '../components/loader'
+import Loader from '../components/Loader'
+import Navbar from '../components/Navbar'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -19,8 +20,8 @@ export default function Home() {
 
 
   return (
-    <div className="bg-slate-400 w-screen h-screen max-h-screen max-w-screen px-36 py-12 flex justify-center items-center">
-      {loading ? <Loader /> :<Content />}
+    <div className="bg-gradient-to-r from-body-start to-body-end w-screen h-screen max-h-screen max-w-screen ">
+      {loading ? <Loader /> : <Navbar />}
     </div>
   )
 }
