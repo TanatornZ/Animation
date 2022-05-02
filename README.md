@@ -1,7 +1,7 @@
 Pratices Animation 
     clone Halloween
         -loading ✅
-        -swiper-react
+        -react-slick ✅
         -scrollReveal
         -breakpoint
         -scroll up

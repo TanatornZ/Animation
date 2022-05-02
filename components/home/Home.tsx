@@ -1,25 +1,29 @@
 import React from "react";
 import Slider from "react-slick";
 import Slide from "./Slide";
-import {home} from '../../Json/home';
+import { home } from "../../Json/home";
 type Props = {};
 
 function Home({}: Props) {
   var settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
+  dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 4000,
+  //add class to dots
+  dotsClass: "button__bar",
+  arrows: false,
   };
 
-  console.log(home)
   return (
-    <div >
-      
-      <Slider {...settings}>  
-          {home.map((item) => (<Slide key={item.id} data={item}/>))}
+    <div>
+      <Slider {...settings}>
+        {home.map((item) => (
+          <Slide key={item.id} data={item} />
+        ))}
       </Slider>
     </div>
   );
