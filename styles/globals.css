@@ -4,6 +4,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300&family=Tapestry&display=swap');
 
+@import "~slick-carousel/slick/slick.css"; 
+@import "~slick-carousel/slick/slick-theme.css";
+
 html,
 body {
   padding: 0;
@@ -103,4 +106,24 @@ a {
   100% {
     transform: rotate(360deg);
   }
+}
+
+.home__indicator{
+  width: 8px;
+  height: 8px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 7rem;
+  right: 0.5rem;
+}
+
+.home__indicator::before{
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 48px;
+  background-color: #fff;
+  top: -3rem;
+  right: 45%;
 }

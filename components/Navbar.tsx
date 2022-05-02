@@ -10,7 +10,7 @@ function Navbar({}: Props) {
 
     console.log(showMenu)
   return (
-    <div>
+    <div className='block'>
         <NavbarToggle setShowMenu={setShowMenu} showMenu={showMenu}/>
         <div className="flex items-center justify-between border p-4 absolute w-full top-0">
           <div className="flex items-center">

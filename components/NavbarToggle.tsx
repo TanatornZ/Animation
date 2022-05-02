@@ -8,10 +8,9 @@ type Props = {
 
 function NavbarToggle({ setShowMenu , showMenu}: Props) {
 
-    
 
   return (
-    <div className={`relative bg-gradient-to-b from-body-start to-[#6E7140] w-full z-10 p-5 rounded-b-3xl relative ${showMenu ? '-translate-y-[442px]' : '-translate-y-[0]'} transition-transform duration-300`}>
+    <div className={`absolute bg-gradient-to-b from-body-start to-[#6E7140] w-full z-10 p-5 rounded-b-3xl ${showMenu ? '-translate-y-[0]' : '-translate-y-[442px]'} transition-transform duration-500`}>
         <div className="w-28 h-32 absolute top-0 left-0">
             <Image src='/images/nav-img.png' layout='fill' alt='navbar' className='absolute' />
         </div>

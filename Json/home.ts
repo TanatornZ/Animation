@@ -1,0 +1,36 @@
+export const home = [
+  {
+    id: '1',
+    detailTitle: "The Labu “Reiza”",
+    detailSubTitle: "The Living Pumpkin",
+    homeSubTitle: "#1 Top Scariest Ghost",
+    homeTitle1: "UOOOO",
+    homeTitle2: "TRICK OR",
+    homeTitle3: "TREAT!!",
+    homeDescription:
+      "Hi, I'm Reiza, people call me 'El Labu'. I am currently trying to learn something new, building my own bike with parts made only in Malaysia.",
+    img: "home1-img.png",
+  },
+  {id: '2',
+    detailTitle: "Adino & Grahami",
+    detailSubTitle: "No words can describe them",
+    homeSubTitle: "#2 top Best duo",
+    homeTitle1: "BRING BACK",
+    homeTitle2: "MY COTTON",
+    homeTitle3: "CANDY",
+    homeDescription:
+      "Adino steals cotton candy from his brother and eats them all in one bite,  a hungry beast. Grahami can no longer contain his anger towards Adino.",
+    img: "home2-img.png",
+  },
+  {id: '3',
+    detailTitle: "Captain Sem",
+    detailSubTitle: "Veteran Spooky Ghost",
+    homeSubTitle: "#3 Top Scariest  Ghost",
+    homeTitle1: "RESPAWN ",
+    homeTitle2: "THE SPOOKY",
+    homeTitle3: "SKULL",
+    homeDescription:
+      "In search for cute little puppy, Captain Sem has come back from his tragic death. With his hogwarts certified power he promise to be a hero for all of ghostkind.",
+    img: "home3-img.png",
+  },
+];
