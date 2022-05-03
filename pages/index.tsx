@@ -2,6 +2,8 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
+import About from '../components/About'
+import Category from '../components/category/Category'
 import Content from '../components/Content'
 import Home from '../components/home/Home'
 import Loader from '../components/Loader'
@@ -21,11 +23,13 @@ export default function Index() {
 
 
   return (
-    <div className="bg-gradient-to-r from-body-start to-body-end w-screen h-screen">
+    <div className="bg-gradient-to-r from-body-start to-body-end w-full h-full min-h-screen">
       <Navbar />
 
       <div className='pt-20 px-2'>
           <Home />
+          <Category />
+          <About />
       </div>
     </div>
   )

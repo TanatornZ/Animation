@@ -12,7 +12,7 @@ function Navbar({}: Props) {
   return (
     <div className='block'>
         <NavbarToggle setShowMenu={setShowMenu} showMenu={showMenu}/>
-        <div className="flex items-center justify-between border p-4 absolute w-full top-0">
+        <div className="flex items-center justify-between border-b p-4 absolute w-full top-0">
           <div className="flex items-center">
             <Image src="/images/logo.png" width="20" height="20" alt="logo" />
             <p className="ml-2 text-xl font-medium text-white">Halloween</p>
