@@ -8,6 +8,7 @@ import Content from '../components/Content'
 import Home from '../components/home/Home'
 import Loader from '../components/Loader'
 import Navbar from '../components/Navbar'
+import TrickOrTreat from '../components/trickOrtreat/TrickOrTreat'
 import styles from '../styles/Home.module.css'
 
 export default function Index() {
@@ -26,10 +27,11 @@ export default function Index() {
     <div className="bg-gradient-to-r from-body-start to-body-end w-full h-full min-h-screen">
       <Navbar />
 
-      <div className='pt-20 px-2'>
+      <div className='pt-20'>
           <Home />
           <Category />
           <About />
+          <TrickOrTreat />
       </div>
     </div>
   )

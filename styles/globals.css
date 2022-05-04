@@ -162,3 +162,13 @@ a {
   background-color: #ffffff;
 }
 
+
+/* contnet */
+
+.content:hover .img-content {
+  transform: translateY(-.5rem);
+}
+
+.content:hover .cart-content {
+  transform: translateX(-2.3rem);
+}

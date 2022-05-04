@@ -1,14 +1,13 @@
 import Image from "next/image";
 import React from "react";
+import TitleSection from "./TitleSection";
 
 type Props = {};
 
 function About({}: Props) {
   return (
     <div>
-      <p className="text-center text-white font-bold text-3xl">
-        About Halloween <br /> Night
-      </p>
+      <TitleSection title1="About Halloween" title2='Night' />
       <div className="flex flex-col justify-center items-center">
           <div className='w-2/3 text-center text-white'>
             <p className='my-12 opacity-60'>
