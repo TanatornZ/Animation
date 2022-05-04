@@ -31,7 +31,7 @@ export default function Index() {
     <div className="bg-gradient-to-r from-body-start to-body-end w-full h-full min-h-screen">
       <Navbar />
 
-      <div className='pt-20 px-5'>
+      <div className='pt-20 '>
           <Home />
           <Category />
           <About />

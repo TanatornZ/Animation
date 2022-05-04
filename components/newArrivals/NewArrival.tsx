@@ -15,7 +15,7 @@ function NewArrival({}: Props) {
     arrows: false,
   };
   return (
-    <div className="pt-16">
+    <div className="pt-16 px-5">
       <TitleSection title1="New Arrivals" />
       <Slider {...settings} className="py-12">
         {newArrivals.map((item) => (

@@ -19,7 +19,7 @@ function Home({}: Props) {
   };
 
   return (
-    <div>
+    <div className='px-5'>
       <Slider {...settings}>
         {home.map((item) => (
           <Slide key={item.id} data={item} />

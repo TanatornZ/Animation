@@ -6,7 +6,7 @@ type Props = {}
 
 function TrickOrTreat({}: Props) {
   return (
-    <div className='py-6'>
+    <div className='py-6 px-5'>
         <TitleSection title1="Trick ot treat" />
         <div className="grid gap-6 grid-cols-2 mt-12 ">
             {trickOrTreat.map((item) => (

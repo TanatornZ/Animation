@@ -7,7 +7,7 @@ type Props = {}
 
 function Discount({}: Props) {
   return (
-    <div className='mt-16 bg-gradient-to-b from-content-start pt-16 to-content-end  rounded-lg flex flex-col justify-center items-center'>
+    <div className='mx-5 bg-gradient-to-b from-content-start pt-16 to-content-end  rounded-lg flex flex-col justify-center items-center'>
         <TitleSection title1="50% Discount" title2='On New Products' />
         <div className="my-5"></div>
         <Button text='Go to new' />

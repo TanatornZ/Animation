@@ -9,7 +9,7 @@ function Category({}: Props) {
   
 
   return (
-    <div className="py-16">
+    <div className="py-16 px-5">
         <TitleSection title1="Favorite Scare" title2='Category' />
         <div className='grid grid-cols-2 gap-10'>
             {category.map((item) => (
