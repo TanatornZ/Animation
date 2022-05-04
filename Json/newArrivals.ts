@@ -5,7 +5,7 @@ export const newArrivals = [
     category: "Accessory",
     price: 14.99,
     discount: 29.99,
-    img : 'new1-img'
+    img : 'new1-img.png'
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ export const newArrivals = [
     category: "Accessory",
     price: 11.99,
     discount: 21.99,
-    img : 'new2-img'
+    img : 'new2-img.png'
   },
   {
     id: 3,
@@ -21,7 +21,7 @@ export const newArrivals = [
     category: "Accessory",
     price: 4.99,
     discount: 9.99,
-    img : 'new3-img'
+    img : 'new3-img.png'
   },
   {
     id: 4,
@@ -29,7 +29,7 @@ export const newArrivals = [
     category: "Accessory",
     price: 14.99,
     discount: 29.99,
-    img : 'new4-img'
+    img : 'new4-img.png'
   },
   {
     id: 5,
@@ -37,7 +37,7 @@ export const newArrivals = [
     category: "Accessory",
     price: 5.99,
     discount: 12.99,
-    img : 'new5-img'
+    img : 'new5-img.png'
   },
   {
     id: 6,
@@ -45,7 +45,7 @@ export const newArrivals = [
     category: "Accessory",
     price: 7.99,
     discount: 9.99,
-    img : 'new6-img'
+    img : 'new6-img.png'
   },
   
 ];

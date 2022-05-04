@@ -2,14 +2,26 @@ import Image from "next/image";
 import React from "react";
 import SlideFooter from "./SlideFooter";
 
+type slideItem = {
+  img : string ,
+  homeTitle1 : string ,
+  homeTitle2 : string ,
+  homeTitle3 : string ,
+  homeSubTitle : string ,
+  detailSubTitle : string ,
+  detailTitle : string ,
+  homeDescription : string ,
+}
+
 type Props = {
-  data: object;
+  data: slideItem;
+  new?: boolean;
 };
 
-function Slide({ data }: Props) {
+function Slide({ data}: Props) {
 
   return (
-    <div className="grid text-white ml-1 p-3 ">
+    <div className="grid text-white ml-1 py-3 ">
       <div className="justify-self-center relative">
         <div className="home__indicator"></div>
         <div className="w-60 h-64 relative my-5">

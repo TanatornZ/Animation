@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import Button from "./Button";
 import TitleSection from "./TitleSection";
 
 type Props = {};
@@ -15,7 +16,7 @@ function About({}: Props) {
               and it is a very fun international celebration, this celebration comes
               from ancient origins, and is already celebrated by everyone.
             </p>
-            <button className="py-4 px-6 bg-orange-600 rounded-lg drop-shadow-lg ">Know more</button>
+            <Button text='Know more' />
           </div>
           <div className='w-48 h-64 relative my-12' >
               <Image src='/images/about-img.png' layout="fill" alt='about' />
