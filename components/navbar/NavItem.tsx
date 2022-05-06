@@ -4,7 +4,7 @@ type Props = {};
 
 function NavItem({}: Props) {
   const items = [
-    { name: "Home", target: "#home" },
+    { name: "Home", target: "#" },
     { name: "About", target: "#about" },
     { name: "Candy", target: "#trick" },
     { name: "New", target: "#new" },

@@ -14,6 +14,7 @@ import NewArrival from '../components/newArrivals/NewArrival'
 import NewLetter from '../components/NewLetter'
 import TrickOrTreat from '../components/trickOrtreat/TrickOrTreat'
 import styles from '../styles/Home.module.css'
+import BackToTop from '../components/BackToTop'
 
 export default function Index() {
 
@@ -41,7 +42,7 @@ export default function Index() {
           <NewLetter />
       <Footer />
       </div>
-
+    <BackToTop />
     </div>
   )
 }

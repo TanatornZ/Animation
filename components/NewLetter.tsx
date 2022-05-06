@@ -6,7 +6,7 @@ type Props = {};
 
 function NewLetter({}: Props) {
   return (
-    <div className='mt-10 px-3 max-w-sm mx-auto'>
+    <div className=' mt-16 md:mt-24 px-3 max-w-lg mx-auto'>
       <TitleSection title1="Our Newsletter" />
       <p className='text-white text-center my-8 opacity-60 px-5'> Promotion new products and sales. Directly to your inbox</p>
         <div className="bg-gradient-to-b from-content-start to-content-end p-4 rounded-lg flex justify-center w-full">

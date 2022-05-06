@@ -25,7 +25,7 @@ function Navbar({}: Props) {
     <div className={`block sticky top-0 z-10`}>
       <NavbarToggle setShowMenu={setShowMenu} showMenu={showMenu} />
       <div
-        className={`p-4 px-7 absolute w-full top-0  lg:border-0 ${
+        className={`p-3 px-7 absolute w-full top-0  border-0 ${
           scroll && "bg-gradient-to-r from-content-start to-content-end "
         }`}
       >

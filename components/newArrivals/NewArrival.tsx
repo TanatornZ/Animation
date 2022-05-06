@@ -14,7 +14,6 @@ function NewArrival({}: Props) {
     speed: 500,
     slidesToScroll: 3,
     slidesToShow: 3,
-    // arrows: false,
 
     swipeToSlide: true,
     responsive: [
@@ -30,8 +29,10 @@ function NewArrival({}: Props) {
       {
         breakpoint: 850,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2,
           slidesToScroll: 2,
+          centerMode: true,
+          arrows: false,
         },
       },
       {
@@ -46,14 +47,16 @@ function NewArrival({}: Props) {
     ],
   };
   return (
-    <div className="pt-16 px-5 lg:px-0  lg:max-w-3xl mx-auto">
-      <TitleSection title1="New Arrivals" />
-      <Slider {...settings} className="py-12">
-        {newArrivals.map((item) => (
-          <ProductItem key={item.id} data={item} isArrival />
-        ))}
-      </Slider>
-    </div>
+    <section id="new">
+      <div className="pt-24 md:pt-32 lg:pt-24 px-5 lg:px-0  max-w-4xl mx-auto">
+        <TitleSection title1="New Arrivals" />
+        <Slider {...settings} className="py-12">
+          {newArrivals.map((item) => (
+            <ProductItem key={item.id} data={item} isArrival />
+          ))}
+        </Slider>
+      </div>
+    </section>
   );
 }
 

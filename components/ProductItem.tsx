@@ -19,7 +19,7 @@ type Props = {
 function Item({ data, isArrival }: Props) {
   return (
     <div
-      className={`flex flex-col p-4 bg-gradient-to-b from-content-start to-content-end items-center rounded-xl text-white relative overflow-hidden content ${
+      className={`flex flex-col p-4 bg-gradient-to-b from-content-start to-content-end items-center rounded-3xl text-white relative overflow-hidden content ${
         isArrival ? "mx-2" : ""
       } `}
     >
@@ -30,10 +30,10 @@ function Item({ data, isArrival }: Props) {
       ) : (
         ""
       )}
-      <div className="w-24 h-24 relative mb-3 img-content transition ">
+      <div className="w-24 h-24 md:w-28 md:h-28  relative mb-3 img-content transition ">
         <Image src={`/images/${data.img}`} layout="fill" alt={`${data.name}`} />
       </div>
-      <p className="text-sm font-bold">{data.name}</p>
+      <p className="text-xl font-bold">{data.name}</p>
       <p className="text-sm opacity-60 mb-2">{data.category}</p>
       <div className="flex">
         <p className="text-lg font-bold">$ {data.price}</p>
