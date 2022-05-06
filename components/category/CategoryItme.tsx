@@ -9,8 +9,8 @@ type Props = {
 
 function CategoryItme({title , description , img}: Props) {
   return (
-    <div className="text-center text-white ">
-      <div className="relative w-32 h-32 mx-auto">
+    <div className="text-center text-white">
+      <div className="relative w-32 h-32 mx-auto transition-all hover:-translate-y-2">
         <Image src={`/images/${img}`} layout="fill" alt="category1" />
       </div>
       <p className="text-xl">{title}</p>

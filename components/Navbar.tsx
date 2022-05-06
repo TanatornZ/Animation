@@ -5,22 +5,37 @@ import NavbarToggle from "./NavbarToggle";
 type Props = {};
 
 function Navbar({}: Props) {
+  const [showMenu, setShowMenu] = useState<boolean>(false);
+  const [scroll, setScroll] = useState<boolean>(false);
 
-    const [showMenu ,setShowMenu] = useState<boolean>(false)
+  const scrolled = () => {
+    if (window.scrollY >= 30) {
+      setScroll(true);
+    } else {
+      setScroll(false);
+    }
+  };
 
-    console.log(showMenu)
+  if (typeof window !== "undefined") {
+    window.addEventListener("scroll", scrolled);
+  }
+
   return (
-    <div className='block'>
-        <NavbarToggle setShowMenu={setShowMenu} showMenu={showMenu}/>
-        <div className="flex items-center justify-between border-b p-4 absolute w-full top-0">
-          <div className="flex items-center">
-            <Image src="/images/logo.png" width="20" height="20" alt="logo" />
-            <p className="ml-2 text-xl font-medium text-white">Halloween</p>
-          </div>
-          <div onClick={() => setShowMenu(!showMenu)}>
-            <TiThMenu className="fill-white " size={20} />
-          </div>
+    <div className="block sticky top-0 z-10 ">
+      <NavbarToggle setShowMenu={setShowMenu} showMenu={showMenu} />
+      <div
+        className={`flex items-center justify-between p-4 px-7 absolute w-full top-0  lg:border-0 ${
+          scroll && "bg-gradient-to-r from-content-start to-content-end "
+        }`}
+      >
+        <div className="flex items-center">
+          <Image src="/images/logo.png" width="20" height="20" alt="logo" />
+          <p className="ml-2 text-lg font-medium text-white">Halloween</p>
         </div>
+        <div className="lg:hidden" onClick={() => setShowMenu(!showMenu)}>
+          <TiThMenu className="fill-white " size={20} />
+        </div>
+      </div>
     </div>
   );
 }

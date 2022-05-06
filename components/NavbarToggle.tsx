@@ -15,7 +15,7 @@ function NavbarToggle({ setShowMenu , showMenu}: Props) {
             <Image src='/images/nav-img.png' layout='fill' alt='navbar' className='absolute' />
         </div>
         <MdCancel size='40' className='absolute right-5 fill-white' onClick={() => setShowMenu(!showMenu)}/>
-        <ul className='flex flex-col justify-center items-center text-white leading-[3rem] text-xl font-bold mt-3'>
+        <ul className='flex flex-col justify-center items-center text-white leading-[3rem] text-xl font-bold mt-3 '>
             <li>Home</li>
             <li>About</li>
             <li> Candy</li>

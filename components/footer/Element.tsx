@@ -9,8 +9,8 @@ type Props = {
 
 function Element({title, description1, description2, description3}: Props) {
   return (
-    <div className='text-white'>
-      <div className='font-bold my-5 '>{title}</div>
+    <div className='text-white lg:mr-5'>
+      <div className='font-bold '>{title}</div>
       <p className="opacity-60 ">{description1}</p>
       <p className="opacity-60">{description2}</p>
       <p className="opacity-60">{description3}</p>
