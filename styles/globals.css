@@ -115,7 +115,7 @@ a {
   border-radius: 50%;
   position: absolute;
   top: 7rem;
-  right: 0.5rem;
+  right: 3rem;
 }
 
 .home__indicator::before{

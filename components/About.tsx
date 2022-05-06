@@ -7,7 +7,7 @@ type Props = {};
 
 function About({}: Props) {
   return (
-    <div className="md:flex justify-around max-w-3xl mx-auto items-center">
+    <div className="md:flex justify-around max-w-3xl mx-auto px-5 items-center">
       <div className="ml-5">
         <TitleSection title1="About Halloween" title2="Night" about/>
         <div className="flex flex-col justify-center items-center md:items-start">
@@ -22,7 +22,7 @@ function About({}: Props) {
           </div>
         </div>
       </div>
-      <div className="w-48 h-64 md:w-[450px] md:h-[350px] relative my-12 mx-auto">
+      <div className="w-48 h-64 md:w-[550px] md:h-[350px] relative my-12 mx-auto">
         <Image src="/images/about-img.png" layout="fill" alt="about" />
       </div>
     </div>

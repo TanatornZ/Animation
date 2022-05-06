@@ -21,13 +21,13 @@ type Props = {
 function Slide({ data}: Props) {
 
   return (
-    <div className="grid text-white ml-1 py-3 ">
-      <div className="justify-self-center relative">
+    <div className="flex flex-col text-white ml-2 py-3 ">
+      <div className="relative ">
         <div className="home__indicator"></div>
-        <div className="w-60 h-64 relative my-5">
+        <div className="w-60 h-64 relative my-5 mx-auto">
           <Image src={`/images/${data.img}`} layout="fill" alt="home1" />
         </div>
-        <div className="absolute top-0 -right-8 text-right">
+        <div className="absolute top-0 right-5 text-right">
           <p className="text-md">{data.detailTitle}</p>
           <p className="text-xs">{data.detailSubTitle}</p>
         </div>
