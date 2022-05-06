@@ -187,3 +187,19 @@ a {
 html{
   scroll-behavior: smooth;
 }
+
+
+.active-link{
+  position: relative;
+}
+
+.active-link::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 45%;
+  width: 5px;
+  height: 5px;
+  background-color: whitesmoke;
+  border-radius: 50%;
+}

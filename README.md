@@ -2,7 +2,7 @@ Pratices Animation
     clone Halloween
         -loading ✅
         -react-slick ✅
-        -scrollReveal
-        -breakpoint
-        -scroll up
+        -scrollReveal ✅
+        -breakpoint ✅
+        -scroll up  ✅
         -section active
