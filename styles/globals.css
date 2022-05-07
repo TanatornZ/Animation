@@ -196,7 +196,7 @@ html{
 .active-link::before{
   content: '';
   position: absolute;
-  bottom: 0;
+  bottom: -1rem;
   left: 45%;
   width: 5px;
   height: 5px;

@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import {MdCancel} from 'react-icons/md'
+import NavItem from './NavItem';
 type Props = {
     setShowMenu:  React.Dispatch<React.SetStateAction<boolean>> ;
     showMenu: boolean
@@ -16,11 +17,8 @@ function NavbarToggle({ setShowMenu , showMenu}: Props) {
         </div>
         <MdCancel size='40' className='absolute right-5 fill-white' onClick={() => setShowMenu(!showMenu)}/>
         <ul className='flex flex-col justify-center items-center text-white leading-[3rem] text-xl font-bold mt-3 '>
-            <li>Home</li>
-            <li>About</li>
-            <li> Candy</li>
-            <li>New</li>
-            <li className='rounded-full border-2 py-3 px-6 mt-3'>Support</li>
+            <NavItem />
+            <li className="rounded-full border-2 px-5 mt-4">Support</li>
         </ul>
     </div>
   )

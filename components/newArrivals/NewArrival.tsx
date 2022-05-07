@@ -6,6 +6,7 @@ import TitleSection from "../TitleSection";
 import ProductItem from "../ProductItem";
 import Fade from "react-reveal/Fade";
 import { newArrivals } from "../../Json/newArrivals";
+import { Element } from "react-scroll";
 type Props = {};
 
 function NewArrival({}: Props) {
@@ -49,7 +50,7 @@ function NewArrival({}: Props) {
     ],
   };
   return (
-    <section id="new">
+    <Element name="new">
       <div className="pt-24 md:pt-32 lg:pt-24 px-5 lg:px-0  max-w-4xl mx-auto ">
         <TitleSection title1="New Arrivals" />
         <Fade top duration={1500}>
@@ -60,7 +61,7 @@ function NewArrival({}: Props) {
           </Slider>
         </Fade>
       </div>
-    </section>
+    </Element>
   );
 }
 

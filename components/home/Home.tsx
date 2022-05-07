@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import Slide from "./Slide";
 import { home } from "../../Json/home";
 import Fade from "react-reveal/Fade";
-
+import { Element } from "react-scroll";
 type Props = {};
 
 function Home({}: Props) {
@@ -21,7 +21,7 @@ function Home({}: Props) {
   };
 
   return (
-    <section id="home" className='overflow-hidden'>
+    <Element name="home" className='overflow-hidden'>
       <Fade top duration={1500}>
         <div className="px-5 head">
           <Slider {...settings}>
@@ -31,7 +31,7 @@ function Home({}: Props) {
           </Slider>
         </div>
       </Fade>
-    </section>
+    </Element>
   );
 }
 

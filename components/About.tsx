@@ -3,23 +3,24 @@ import React from "react";
 import Button from "./Button";
 import TitleSection from "./TitleSection";
 import Fade from "react-reveal/Fade";
+import { Element } from "react-scroll";
 
 type Props = {};
 
 function About({}: Props) {
   return (
-    <section id="about">
+    <Element name="about">
       <div className="md:flex justify-around max-w-4xl mx-auto pt-16 px-5 items-center overflow-hidden">
         <div className="ml-5">
           <Fade left duration={1500}>
-          <TitleSection title1="About Halloween" title2="Night" about/>
+            <TitleSection title1="About Halloween" title2="Night" about />
             <div className="flex flex-col justify-center w-full items-center md:items-start">
               <div className="text-center md:text-left text-white w-1/2">
                 <p className="my-12 opacity-60 w-full">
-                  Night of all the saints, or all the dead, is celebrated on October
-                  31 and it is a very fun international celebration, this
-                  celebration comes from ancient origins, and is already celebrated
-                  by everyone.
+                  Night of all the saints, or all the dead, is celebrated on
+                  October 31 and it is a very fun international celebration,
+                  this celebration comes from ancient origins, and is already
+                  celebrated by everyone.
                 </p>
                 <Button text="Know more" />
               </div>
@@ -32,7 +33,7 @@ function About({}: Props) {
           </div>
         </Fade>
       </div>
-    </section>
+    </Element>
   );
 }
 
