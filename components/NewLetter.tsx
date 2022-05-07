@@ -7,7 +7,7 @@ type Props = {};
 
 function NewLetter({}: Props) {
   return (
-    <div className=' mt-16 md:mt-24 px-3 max-w-lg mx-auto overflow-hidden'>
+    <div className=' mt-16 md:mt-24 px-3  max-w-lg mx-auto overflow-hidden'>
       <Fade top>
         <TitleSection title1="Our Newsletter" />
         <p className='text-white text-center my-8 opacity-60 px-5'> Promotion new products and sales. Directly to your inbox</p>

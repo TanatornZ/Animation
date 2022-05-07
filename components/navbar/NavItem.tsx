@@ -21,13 +21,13 @@ function NavItem({}: Props) {
   return (
     <>
       {items.map((item, index) => (
-        <li className={`md:mr-12 `} key={index}>
+        <li className={`md:mr-12 cursor-pointer`} key={index}>
           <Link
             to={item.target}
             activeClass="active-link"
             spy={true}
             smooth={true}
-            duration={300}
+            duration={500}
             offset={-60}
           >
             {item.name}

@@ -5,4 +5,5 @@ Pratices Animation
         -scrollReveal ✅
         -breakpoint ✅
         -scroll up  ✅
-        -section active
+        -section active ✅
+
