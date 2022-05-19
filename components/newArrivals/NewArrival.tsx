@@ -22,8 +22,7 @@ function NewArrival({}: Props) {
         breakpoint: 1024,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 2,
-          centerMode: false,
+          slidesToScroll: 1,
           swipeToSlide: true,
           arrows: true,
         },

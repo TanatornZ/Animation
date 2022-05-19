@@ -29,7 +29,7 @@ function Navbar({}: Props) {
           scroll && "bg-gradient-to-r from-content-start to-content-end "
         }`}
       >
-        <div className="max-w-4xl mx-auto flex justify-between items-center">
+        <div className="max-w-4xl mx-auto flex justify-between items-center ">
           <div className="flex items-center">
             <Image src="/images/logo.png" width="20" height="20" alt="logo" />
             <p className="ml-2 text-lg font-medium text-white">Halloween</p>

@@ -11,7 +11,7 @@ function Footer({}: Props) {
   return (
     <div className="text-white mt-24 relative overflow-hidden px-5 ">
       <Fade top cascade duration={1500}>
-        <div className="max-w-4xl  md:flex justify-around mx-auto">
+        <div className="max-w-4xl  md:flex justify-around mx-auto ">
           <div className="flex flex-col mr-5">
             <div className="flex ">
               <div className="w-5 h-5 relative">
