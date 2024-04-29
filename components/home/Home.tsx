@@ -4,6 +4,7 @@ import Slide from "./Slide";
 import { home } from "../../Json/home";
 import { Element } from "react-scroll";
 type Props = {};
+import { Fade } from "react-awesome-reveal";
 
 function Home({}: Props) {
   var settings = {
@@ -14,21 +15,22 @@ function Home({}: Props) {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 4000,
-    //add class to dots
     dotsClass: "button__bar",
     arrows: false,
   };
 
   return (
-    <Element name="home" className="overflow-hidden">
-      <div className="px-5 head">
-        <Slider {...settings}>
-          {home.map((item) => (
-            <Slide key={item.id} data={item} />
-          ))}
-        </Slider>
-      </div>
-    </Element>
+    <Fade>
+      <Element name="home">
+        <div className="px-5 head">
+          <Slider {...settings}>
+            {home.map((item) => (
+              <Slide key={item.id} data={item} />
+            ))}
+          </Slider>
+        </div>
+      </Element>
+    </Fade>
   );
 }
 
