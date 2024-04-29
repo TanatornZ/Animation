@@ -7,6 +7,7 @@ import ProductItem from "../ProductItem";
 import { newArrivals } from "../../Json/newArrivals";
 import { Element } from "react-scroll";
 type Props = {};
+import { Fade } from "react-awesome-reveal";
 
 function NewArrival({}: Props) {
   var settings = {
@@ -48,16 +49,18 @@ function NewArrival({}: Props) {
     ],
   };
   return (
-    <Element name="new">
-      <div className="pt-24 md:pt-32 lg:pt-24 px-5 lg:px-0  max-w-4xl mx-auto ">
-        <TitleSection title1="New Arrivals" />
-        <Slider {...settings} className="py-12">
-          {newArrivals.map((item) => (
-            <ProductItem key={item.id} data={item} isArrival />
-          ))}
-        </Slider>
-      </div>
-    </Element>
+    <Fade>
+      <Element name="new">
+        <div className="pt-24 md:pt-32 lg:pt-24 px-5 lg:px-0  max-w-4xl mx-auto ">
+          <TitleSection title1="New Arrivals" />
+          <Slider {...settings} className="py-12">
+            {newArrivals.map((item) => (
+              <ProductItem key={item.id} data={item} isArrival />
+            ))}
+          </Slider>
+        </div>
+      </Element>
+    </Fade>
   );
 }
 

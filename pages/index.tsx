@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import About from "../components/About";
 import Category from "../components/category/Category";
-
 import Discount from "../components/Discount";
 import Footer from "../components/footer/Footer";
 import Home from "../components/home/Home";
@@ -10,7 +9,7 @@ import Navbar from ".././components/navbar/Navbar";
 import NewArrival from "../components/newArrivals/NewArrival";
 import NewLetter from "../components/NewLetter";
 import TrickOrTreat from "../components/trickOrtreat/TrickOrTreat";
-import styles from "../styles/Home.module.css";
+import "animate.css";
 import BackToTop from "../components/BackToTop";
 
 export default function Index() {
