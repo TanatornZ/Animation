@@ -5,7 +5,5 @@
     <ul>
         <li>loading state</li>
         <li>list items</li>
-        <li>scroll reveal</li>
-        <li>animation active section</li>
     </ul>
 </div>
